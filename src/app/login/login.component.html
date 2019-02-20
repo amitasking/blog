@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>The Materialize Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>             
+   </head>
+   
+   <body class="bg">
+ <div class="row ">
+<div class="col-sm-12 col-md-5 offset-md-3 center">
+<h2 class="white-text">welcome to my App!</h2>
+<div class="container">
+    <form [formGroup]="fg" (ngSubmit)="onlog(fg)">
+
+        <button class="btn btn-large form-control" type="submit">login with google! </button>
+        </form>
+        
+        
+      </div>
+       
+</div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

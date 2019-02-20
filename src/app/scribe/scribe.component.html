@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>The Materialize Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>             
+   </head>
+   
+   <body>
+      <nav class="nav-wrapper indigo z-depth-2">
+
+        <a href="#" class="brand-logo center">Scribe</a>
+        <div class="container">
+           
+<ul class="hide-on-med-and-up">
+      <li><a class="button-collapse" data-activates="mobile"><i class="material-icons">menu</i></a></li>
+
+</ul>
+         <ul class="left hide-on-med-and-down">
+             
+            <li *ngIf=!loggedIn><a routerLink="/home" class="btn indigo"><i class="material-icons">home</i></a></li>
+<li *ngIf=loggedIn><a routerLink="/myBlog" class="btn indigo"><i class="material-icons">home</i></a></li>
+<li><a href="#" class="btn indigo indigo-darken-3 pulse"><i class="material-icons">call</i></a></li>
+<li><a href="#" class="btn indigo"><i class="material-icons">search</i></a></li>
+
+
+        </ul>
+<ul class="right hide-on-med-and-down">
+   <li *ngIf=!loggedIn><a routerLink="/login" class="btn indigo">login</a></li>
+
+<li *ngIf=loggedIn><a class="btn indigo" routerLink="/" (click)="logout()"><i class="material-icons">exit_to_app</i></a></li>
+<li *ngIf=loggedIn><a class="btn indigo" href="#"><i class="material-icons">person</i></a></li>
+
+</ul>
+      </div>
+      </nav>
+
+      <ul class="side-nav" id="mobile">
+            <li *ngIf=!loggedIn><a routerLink="/home" class="btn indigo"><i class="material-icons">home</i></a></li>
+            <li *ngIf=loggedIn><a routerLink="/myBlog" class="btn indigo"><i class="material-icons">home</i></a></li>
+            <li><a href="#" class="btn indigo indigo-darken-3 pulse"><i class="material-icons">call</i></a></li>
+            <li><a href="#" class="btn indigo"><i class="material-icons">search</i></a></li>
+            <li *ngIf=!loggedIn><a routerLink="/login" class="btn indigo">login</a></li>
+
+            <li *ngIf=loggedIn><a class="btn indigo" routerLink="/" (click)="logout()"><i class="material-icons">exit_to_app</i></a></li>
+            <li *ngIf=loggedIn><a class="btn indigo" href="#"><i class="material-icons">person</i></a></li>
+                  
+
+                    </ul>
+            
+
+<script>
+$(document).ready(function(){
+
+$('.').sideNav();
+
+
+}
+
+
+);
+
+
+</script>
+                  </body>
+
+</html>

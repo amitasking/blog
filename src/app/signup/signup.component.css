@@ -1,0 +1,27 @@
+.row{
+
+    background-color:#2e7cf6;
+    
+    }
+    
+.background-left{
+
+    background-image: url('/assets/s.png');
+     background-size: contain;
+background-repeat:no-repeat;
+
+}
+h4{
+
+color: white;
+
+}
+h5{color: white;}
+
+
+.card{
+
+background-color: transparent;
+
+
+}

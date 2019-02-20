@@ -1,0 +1,28 @@
+<div class="card text-blank mt-3">
+<div class="card-body">
+<div class="card-title">
+
+<h2>{{postData.title}}</h2>
+
+</div>
+
+<div class="card-text">
+{{post.id}}
+
+{{postData.content}}
+
+</div>
+
+</div>
+
+<div class="card-footer text-muted">
+
+<!--Posted on{{postData.created.toDate() |date:'MMM dd,yyyy'}}-->
+<button type="button" class="btn btn-danger card-link btn-sm float-right" (click)="delete()">delete</button>
+</div>
+<a class="card-footer text-muted" routerLink="/profile/{{postData.owner}}">View Writer's Profile</a>
+
+
+
+
+</div>

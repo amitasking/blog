@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="row">
+
+
+<div class="col-sm-6 background-left p5">
+
+<h4>welcome to my blog!</h4>
+
+
+</div>
+<div class="offset-sm-2 col-sm-3 background-right p5">
+
+
+    <div class="card text-blank ">
+
+        <div class="card-body border-0">
+        <div class="card-title text-center">
+        
+        <h5 indigo-text text-darken-3 >Sign Up Free!</h5>
+        
+        </div>
+        <div class="card-text">
+        
+        <form [formGroup]="fg" (ngSubmit)="onsubmit(fg)">
+          <div class="form-row">
+        
+        
+        
+              <div class="row">
+        
+                  <div class="col-md-6">
+                  
+                  <div class="form-group">
+                  
+                  <input class="form-control" required placeholder="firstName" name="firstName"
+                  [formControl]="fg.controls['firstName']">
+                  
+                  </div>
+                  
+                  
+                  </div>
+                  <div class="col-md-6">
+                  
+                      <div class="form-group">
+                      
+                      <input class="form-control" required placeholder="Lastname" name="lastName"
+                      [formControl]="fg.controls['lastName']">
+                      
+                      </div>
+                      
+                      
+                      </div>
+                  
+                  
+                  
+                    
+                  </div>
+                  
+        
+          </div>
+          <div class="alert alert-danger" *ngIf="fg.controls['firstName'].touched && fg.controls['firstName'].invalid" >
+        
+            enter name!
+        
+          </div>
+          <div class="form-group">
+        
+              <input class="form-control" required placeholder="email" name="email"
+              [formControl]="fg.controls['email']">
+          
+          </div>
+          <div class="alert alert-danger" *ngIf="fg.controls['email'].touched && fg.controls['email'].invalid">
+        
+              enter email!
+          
+            </div>
+          
+          <div class="form-group">
+        
+              <input class="form-control" required placeholder="password" name="password"
+              [formControl]="fg.controls['password']">
+        
+          
+          </div>
+          <div class="alert alert-danger" *ngIf="fg.controls['password'].touched && fg.controls['password'].invalid">
+        
+              password should be 8 char!
+          
+            </div>
+          <div class="form-group">
+        
+              <input class="form-control" required placeholder="confirm password" name="cpassword"
+              [formControl]="fg.controls['cpassword']">
+          
+          </div>
+        <button class="btn btn-success form-control" type="submit">submit</button>
+        
+        </form>
+        
+        
+        
+        </div>
+        
+        
+        
+        </div>
+        
+        
+        
+          </div>
+
+</div>
+  </div>
+</body>
+</html>

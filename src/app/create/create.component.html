@@ -1,0 +1,23 @@
+  <div class="row mt-5">
+<div class="col">
+
+<div class="form-group">
+
+<label>post title</label>
+
+<input placeholder="post title" name="title" [(ngModel)]="title" class="form-control">
+
+</div>
+
+<div class="form-group">
+
+  <label>POST</label>
+  <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="htmlContent"></app-ngx-editor>
+  
+  </div>
+  
+</div>
+
+
+  </div>
+
